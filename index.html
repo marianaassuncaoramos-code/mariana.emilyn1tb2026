@@ -3,91 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoAves | Ornitologia & O Gavião-Pega-Macaco</title>
+    <title>Asas Invisíveis: A Ornitologia no Brasil</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Cabeçalho Principal com o Novo Título e Logo -->
     <header class="main-header">
-        <div class="container header-container">
-            <h1 class="blog-logo">EcoAves <span>| Blog de Ornitologia</span></h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#especie">O Gavião</a></li>
-                    <li><a href="#estudos">Estudos</a></li>
-                    <li><a href="#nomes-populares">Nomes Populares</a></li>
-                </ul>
-            </nav>
+        <div class="container header-flex">
+            <div class="logo-area">
+                <span class="logo-icon">🦅</span>
+                <span class="logo-text">Asas<span>Invisíveis</span></span>
+            </div>
+            <div class="title-area">
+                <h1>Asas Invisíveis: <span>A Ornitologia no Brasil</span></h1>
+                <p>Descobrindo a riqueza alada, os tarsos emplumados e os mistérios taxonômicos da nossa fauna</p>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-content">
-            <h2>Explorando a Biodiversidade das Aves</h2>
-            <p>Ciência, conservação e o fascinante universo dos rapinantes neotropicais.</p>
+    <!-- Seção 1: Introdução à Ornitologia no Brasil -->
+    <section class="intro-section container">
+        <h2>A Ciência das Aves Desconhecida no Brasil</h2>
+        <p>O Brasil possui uma das maiores biodiversidades de aves do planeta, ultrapassando 1.900 espécies. Apesar disso, a **ornitologia** enfrenta muitas barreiras de divulgação em massa. Muitas vezes, espécies fascinantes vivem ao nosso lado sem que saibamos seus nomes científicos ou seus papéis ecológicos vitais.</p>
+        
+        <div class="alert-box">
+            📌 <strong>O Mistério dos Tarsos Emplumados:</strong> Na biologia clássica, o que separa um simples gavião de uma <strong>verdadeira águia</strong> é a presença de penas que cobrem completamente a canela (tarso) até a base dos dedos. No Brasil, todas as espécies do gênero <em>Spizaetus</em> compartilham essa característica incrível, embora popularmente ainda carreguem o nome de "gavião".
         </div>
     </section>
 
-    <main class="container main-content">
+    <!-- Seção 2: O Caos dos Nomes Populares e a Tríade Spizaetus -->
+    <section class="names-section container">
+        <h2>A Tríade das Águias de Tarso Emplumado</h2>
+        <p>Uma única ave pode receber dezenas de nomes vulgares dependendo do estado. Abaixo, explore as três espécies nativas do gênero <em>Spizaetus</em>, seus múltiplos nomes regionais, suas fotos e seus cantos reais.</p>
         
-        <article id="especie" class="card">
-            <span class="tag">Espécie em Destaque</span>
-            <h2>O Impetuoso Gavião-pega-macaco (<em>Spizaetus tyrannus</em>)</h2>
-            
-            <figure class="article-image">
-                <img src="https://images.unsplash.com/photo-1549608276-5786777e6587?auto=format&fit=crop&w=1000&q=80" alt="Gavião de rapina com olhar atento">
-                <figcaption>Foto: Exemplo de ave de rapina da família Accipitridae (Substitua por foto do <em>Spizaetus tyrannus</em>).</figcaption>
-            </figure>
+        <div class="cards-grid">
+            <!-- Card 1: Gavião-Pega-Macaco -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Gavião-pega-macaco pousado" class="card-img">
+                <div class="card-content">
+                    <h3>Spizaetus tyrannus</h3>
+                    <p class="scientific">Família Accipitridae | Subfamília Aquilinae</p>
+                    <p><strong>Nomes Populares no Brasil:</strong></p>
+                    <ul class="tag-list">
+                        <li>Gavião-pega-macaco</li>
+                        <li>Águia-pega-macaco</li>
+                        <li>Apacanim-preto</li>
+                        <li>Papa-mico</li>
+                        <li>Cutiú-preto</li>
+                    </ul>
+                    <div class="card-audio">
+                        <p>🎵 Canto em Voo:</p>
+                        <audio controls src="https://xeno-canto.org"></audio>
+                    </div>
+                </div>
+            </div>
 
-            <p>O <strong>gavião-pega-macaco</strong> (<em>Spizaetus tyrannus</em>), também conhecido como gavião-de-penacho-preto, é uma impressionante ave de rapina que habita florestas tropicais das Américas do Sul e Central.</p>
-            
-            <p>Com sua plumagem escura dominante, penacho erétil na cabeça e asas largas adaptadas para manobras dentro do dossel florestal, ele é um predador de topo eficiente. Apesar do nome, sua dieta é bastante variada, incluindo mamíferos de médio porte, aves e répteis.</p>
-        </article>
+            <!-- Card 2: Gavião-Pato / Águia-Mascarada -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Gavião Pato" class="card-img">
+                <div class="card-content">
+                    <h3>Spizaetus melanoleucus</h3>
+                    <p class="scientific">Família Accipitridae | Subfamília Aquilinae</p>
+                    <p><strong>Nomes Populares no Brasil:</strong></p>
+                    <ul class="tag-list">
+                        <li>Gavião-pato</li>
+                        <li>Águia-mascarada</li>
+                        <li>Águia-viúva</li>
+                        <li>Apacanim-branco</li>
+                        <li>Águia-branca</li>
+                    </ul>
+                    <div class="card-audio">
+                        <p>🎵 Canto característico:</p>
+                        <audio controls src="https://xeno-canto.org"></audio>
+                    </div>
+                </div>
+            </div>
 
-        <article id="estudos" class="card">
-            <span class="tag">Pesquisa Científica</span>
-            <h2>Como Funcionam os Estudos Ornitológicos de Campo</h2>
-            
-            <figure class="article-image">
-                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=80" alt="Pesquisador observando a natureza com binóculo">
-                <figcaption>Pesquisa de campo: O monitoramento é essencial para a conservação.</figcaption>
-            </figure>
-
-            <p>A ornitologia vai muito além da simples observação de aves. Os estudos modernos combinam métodos tradicionais de bioacústica, anilhamento e contagem em transectos com tecnologias avançadas de telemetria por satélite.</p>
-
-            <p>Entender a densidade populacional e o raio de ação de predadores como o <em>Spizaetus tyrannus</em> ajuda biólogos a mapear a saúde dos ecossistemas florestais como um todo.</p>
-        </article>
-
-        <article id="nomes-populares" class="card highlight-card">
-            <span class="tag">Taxonomia & Dialetos</span>
-            <h2>O Impacto dos Nomes Populares na Identificação das Espécies</h2>
-            
-            <p>No Brasil, uma única espécie de ave pode ter dezenas de nomes vernáculos (populares) dependendo da região geográfica. O caso do <strong>gavião-pega-macaco</strong> é um excelente exemplo disso.</p>
-
-            <h3>1. Confusão entre Espécies Distintas</h3>
-            <p>Em algumas regiões, o nome "gavião-pega-macaco" é atribuído incorretamente ao gavião-real (<em>Harpia harpyja</em>) ou ao gavião-de-penacho (<em>Spizaetus ornatus</em>). Essa sobreposição pode levar a registros científicos imprecisos em plataformas de ciência cidadã se não houver confirmação visual ou auditiva.</p>
-
-            <h3>2. O Papel da Nomenclatura Científica</h3>
-            <p>Para evitar ambiguidades, a taxonomia utiliza a nomenclatura binomial em latim. Enquanto "gavião-pega-macaco" varia regionalmente, <em>Spizaetus tyrannus</em> refere-se universalmente à mesma espécie taxonômica em qualquer lugar do planeta.</p>
-
-            <blockquote>
-                "O nome popular aproxima a comunidade da ciência local, mas o nome científico garante a precisão necessária para a conservação global."
-            </blockquote>
-        </article>
-
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 Blog EcoAves — Divulgação Científica e Ornitologia.</p>
+            <!-- Card 3: Gavião-de-Penacho / Águia-de-Penacho -->
+            <div class="card">
+                <img src="https://unsplash.com" alt="Gavião de Penacho" class="card-img">
+                <div class="card-content">
+                    <h3>Spizaetus ornatus</h3>
+                    <p class="scientific">Família Accipitridae | Subfamília Aquilinae</p>
+                    <p><strong>Nomes Populares no Brasil:</strong></p>
+                    <ul class="tag-list">
+                        <li>Gavião-de-penacho</li>
+                        <li>Águia-de-penacho</li>
+                        <li>Inhambu-itã</li>
+                        <li>Gavião-de-toca</li>
+                    </ul>
+                    <div class="card-audio">
+                        <p>🎵 Vocalização territorial:</p>
+                        <audio controls src="https://xeno-canto.org"></audio>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Seção 3: Foco no Gavião-Pega-Macaco -->
+    <section class="specie-focus">
+        <div class="container bg-dark text-light">
+            <h2>Espécie em Foco: Gavião-pega-macaco</h2>
+            <p class="subtitle">Uma águia florestal raramente vista em áreas urbanizadas</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>🌳 Habitat</h4>
+                    <p>Florestas primárias e secundárias densas, como a Mata Atlântica e a Amazônia. Raramente tolera degradação urbana severa, dependendo de densos corredores verdes protegidos para sobreviver.</p>
+                </div>
+                <div class="info-item">
+                    <h4>💡 Origem do Nome</h4>
+                    <p>O nome descritivo vem de sua fantástica e poderosa capacidade física de caçar primatas de pequeno tempo diretamente nos dosséis mais altos das árvores.</p>
+                </div>
+                <div class="info-item">
+                    <h4>🥩 Alimentação</h4>
+                    <p>Predador formidável do topo da cadeia alimentar. Alimenta-se de mamíferos (saguis, micos, esquilos, morcegos e gambás) e aves de médio porte, como os tucanos.</p>
+                </div>
+                <div class="info-item">
+                    <h4>🦅 Comportamento</h4>
+                    <p>Possui silhueta marcante em voo, realizando exibições circulares nas horas mais quentes da manhã. Apresenta um icônico penacho preto em forma de coroa na cabeça.</p>
+                </div>
+                <div class="info-item full-width">
+                    <h4>🥚 Hábitos Reprodutivos</h4>
+                    <p>Constrói ninhos volumosos e profundos feitos de gravetos pesados no topo de árvores gigantescas. A fêmea (maior que o macho) cuida de apenas um filhote por ciclo reprodutivo, exigindo um longo e dedicado período de cuidado parental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 4: Chat Interativo sobre Nomenclatura -->
+    <section class="chat-section container">
+        <h2>Fórum Interativo: Desmistificando a Nomenclatura</h2>
+        <p>Clique nas perguntas abaixo para simular as respostas de um Ornitólogo no Chat:</p>
+
+        <div class="chat-wrapper">
+            <input type="radio" name="chat-select" id="chat-q1" checked>
+            <input type="radio" name="chat-select" id="chat-q2">
+            <input type="radio" name="chat-select" id="chat-q3">
+
+            <div class="chat-menu">
+                <label for="chat-q1" class="lbl-q1">💬 Como a taxonomia reflete o habitat?</label>
+                <label for="chat-q2" class="lbl-q2">💬 E sobre o comportamento da ave?</label>
+                <label for="chat-q3" class="lbl-q3">💬 Por que famílias mudam tanto de nome?</label>
+            </div>
+
+            <div class="chat-box">
+                <div class="chat-content c-ans1">
+                    <div class="msg user">Como a taxonomia reflete o habitat das aves?</div>
+                    <div class="msg expert">Excelente pergunta! Nomes específicos como <em>campestris</em> (do campo) ou termos geográficos ajudam a identificar exatamente onde a espécie cumpre seu nicho biológico.</div>
+                </div>
+                <div class="chat-content c-ans2">
+                    <div class="msg user">E sobre o comportamento da ave? É registrado na ciência?</div>
+                    <div class="msg expert">Sim! Epítetos como <em>tyrannus</em> (tirano, agressivo na defesa territorial) ou gêneros como <em>Spizaetus</em> (águia-gavião) descrevem dinâmicas comportamentais e as marcantes táticas de caça de grandes predadores.</div>
+                </div>
+                <div class="chat-content c-ans3">
+                    <div class="msg user">Por que as famílias mudam tanto de nome de tempos em tempos?</div>
+                    <div class="msg expert">Com os avanços da genética, descobrimos que aves parecidas externamente pertencem a linhas evolutivas distintas. A taxonomia se reorganiza constantemente para refletir a história evolutiva real.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>© 2026 Projeto Asas Invisíveis. Fontes e Áudios integrados a partir de repositórios abertos de ornitologia e registros do CBRO.</p>
     </footer>
 
 </body>
 </html>
+
     
     
     
