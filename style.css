@@ -1,124 +1,214 @@
-/* Configurações Gerais e Cores Inspiradas na Natureza */
+/* Configurações de Cores */
 :root {
-    --primary: #2c5e43; /* Verde floresta */
-    --accent: #dca134;  /* Amarelo sutil de ave */
-    --dark: #222222;
-    --light: #f4f7f5;
+    --primary: #1e4631;      /* Verde floresta denso */
+    --primary-light: #2c5e43;/* Verde mais claro */
+    --accent: #dca134;       /* Amarelo dourado das aves */
+    --dark: #1a1a1a;
+    --light: #f3f6f4;
     --white: #ffffff;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/* Fundo Decorado com Padrão de Penas/Folhas sutil */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--dark);
     background-color: var(--light);
+    /* Decoração usando CSS puro para criar formas orgânicas de fundo */
+    background-image: 
+        radial-gradient(circle at 100% 150%, transparent 24%, rgba(44, 94, 67, 0.03) 24%, rgba(44, 94, 67, 0.03) 28%, transparent 28%),
+        radial-gradient(circle at 0% 150%, transparent 24%, rgba(44, 94, 67, 0.03) 24%, rgba(44, 94, 67, 0.03) 28%, transparent 28%);
+    background-size: 60px 60px;
     line-height: 1.6;
 }
 
-/* Header com Imagem de Fundo (Hero) */
+/* Header Totalmente Customizado e Mais Lindo */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://unsplash.com') no-repeat center center/cover;
-    height: 60vh;
+    background: linear-gradient(135deg, var(--primary) 0%, #0f2419 100%);
+    min-height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
-    padding: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-bottom: 5px solid var(--accent);
+}
+
+.logo-wrapper {
+    margin-bottom: 15px;
+}
+
+.logo-svg {
+    width: 70px;
+    height: 70px;
+    color: var(--accent);
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.2));
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-bottom: 5px;
+    letter-spacing: -1px;
 }
 
 .hero-content .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--accent);
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
+    font-weight: 600;
 }
 
-/* Layout do Conteúdo */
+/* Guia de Navegação / Sumário Inteligente */
+.summary-box {
+    max-width: 800px;
+    margin: -30px auto 40px auto;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 10;
+    border-left: 5px solid var(--accent);
+}
+
+.summary-box h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.summary-box ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.summary-box a {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.summary-box a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Área de Conteúdo Principal */
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0 20px 60px 20px;
 }
 
 section {
+    scroll-margin-top: 40px; /* Evita que o topo suma ao clicar no sumário */
+}
+
+.intro {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     margin-bottom: 40px;
 }
 
 h2 {
     color: var(--primary);
-    font-size: 2rem;
-    margin-bottom: 15px;
-    position: relative;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 p {
     margin-bottom: 15px;
     font-size: 1.1rem;
     text-align: justify;
+    color: #444;
 }
 
-/* Sistema de Grid para Texto + Imagem */
+/* Layout Responsivo de duas colunas */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.sections-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    align-items: center;
 }
 
 .card {
     background: var(--white);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
-.img-card img {
+/* Container da Ilustração Dinâmica */
+.img-card {
+    position: sticky;
+    top: 40px;
+}
+
+.bird-illustration {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
 }
 
-/* Seção de Destaque Inferior */
+/* Caixa de Curiosidades */
 .curiosidade {
-    background-color: var(--primary);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
     color: var(--white);
-    padding: 40px;
-    border-radius: 8px;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(44, 94, 67, 0.2);
 }
 
 .curiosidade h2 {
     color: var(--accent);
 }
 
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--dark);
-    color: #888;
-    font-size: 0.9rem;
+.curiosidade p {
+    color: #e2ede7;
 }
 
-/* Responsividade para Celulares */
+/* Footer moderno */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--dark);
+    color: #999;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--primary);
+}
+
+/* Responsividade Completa */
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.5rem; }
-    .hero-content .subtitle { font-size: 1.1rem; }
+    .hero-content h1 { font-size: 2.8rem; }
+    .hero-content .subtitle { font-size: 1rem; letter-spacing: 3px; }
+    .summary-box { margin-top: 20px; }
+    .summary-box ul { grid-template-columns: 1fr; }
     .grid { grid-template-columns: 1fr; }
-    .img-card img { height: 250px; }
+    .img-card { position: relative; top: 0; order: -1; } /* Sobe a imagem no celular */
 }
