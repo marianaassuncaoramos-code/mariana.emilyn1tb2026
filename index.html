@@ -8,35 +8,60 @@
 </head>
 <body>
 
+    <!-- Header com Título Estilizado e o Logo em Formato de Ícone de Texto -->
     <header class="hero">
         <div class="hero-content">
-            <h1>Asas Invisíveis</h1>
+            <div class="logo-texto">🐦 ASAS INVISÍVEIS</div>
             <p class="subtitle">Ornitologia no Brasil</p>
         </div>
     </header>
 
+    <!-- Guia de Navegação / Sumário Inteligente -->
+    <nav class="summary-box">
+        <h3>📖 Guia de Navegação</h3>
+        <ul>
+            <li><a href="#ornitologia">1. Ornitologia no Brasil</a></li>
+            <li><a href="#taxonomia">2. Taxonomia</a></li>
+            <li><a href="#nomenclatura">3. Nomenclatura Científica</a></li>
+            <li><a href="#nomes-populares">4. Nomes Populares</a></li>
+        </ul>
+    </nav>
+
     <main class="container">
         
-        <section class="intro">
+        <!-- Seção 1: Ornitologia -->
+        <section id="ornitologia" class="intro">
             <h2>A Ciência Escondida aos Nossos Olhos</h2>
             <p>O Brasil abriga uma das maiores biodiversidades de aves do planeta, com quase 2.000 espécies registradas. Apesar dessa riqueza, a <strong>ornitologia</strong> — o ramo da zoologia dedicado ao estudo das aves — ainda é uma ciência pouco conhecida pelo grande público. Muitas espécies voam sobre nossas cabeças diariamente sem que saibamos seus nomes, seus hábitos ou a importância de sua conservação.</p>
         </section>
 
+        <!-- Grid com Conteúdo e Imagem com Link Estável -->
         <div class="grid">
-            <section class="card">
-                <h2>Taxonomia e Nomenclatura</h2>
-                <p>Para organizar essa imensa variedade, os cientistas utilizam a <strong>taxonomia</strong> (ciência da classificação) e a <strong>nomenclatura binomial</strong>. Cada ave possui um nome científico único em latim (composto por Gênero e epíteto específico), como o <i>Turdus rufiventris</i> (sabiá-laranjeira). Esse sistema universal permite que ornitólogos do mundo inteiro identifiquem a mesma ave, independentemente do idioma local.</p>
-            </section>
+            <div class="sections-wrapper">
+                <!-- Seção 2: Taxonomia -->
+                <section id="taxonomia" class="card">
+                    <h2>2. Taxonomia</h2>
+                    <p>Para organizar essa imensa variedade, os cientistas utilizam a <strong>taxonomia</strong> (ciência da classificação). Ela agrupa as aves de acordo com suas relações evolutivas, dividindo-as em Ordens, Famílias, Gêneros e Espécies. Isso ajuda a entender a árvore genealógica das nossas aves.</p>
+                </section>
 
-            <section class="card img-card">
-                <img src="https://unsplash.com" alt="Bem-te-vi, uma ave clássica do Brasil">
-            </section>
+                <!-- Seção 3: Nomenclatura -->
+                <section id="nomenclatura" class="card">
+                    <h2>3. Nomenclatura Científica</h2>
+                    <p>A <strong>nomenclatura binomial</strong> atribui a cada ave um nome único em latim, como o <i>Turdus rufiventris</i> (sabiá-laranjeira). Esse sistema universal permite que pesquisadores do mundo inteiro identifiquem exatamente a mesma ave, eliminando barreiras de idioma.</p>
+                </section>
+            </div>
+
+            <!-- Imagem que usa um servidor de teste estável e exibe um pássaro ilustrativo -->
+            <div class="img-card">
+                <img src="https://picsum.photos" alt="Fotografia de ave na natureza brasileira" class="foto-passaro">
+            </div>
         </div>
 
-        <section class="curiosidade">
-            <h2>O Enigma dos Nomes Populares</h2>
-            <p>Se a ciência unifica, a cultura popular diversifica. No Brasil, o mesmo pássaro pode receber dezenas de nomes diferentes — às vezes, dentro de uma mesma cidade ou região.</p>
-            <p>Um exemplo clássico é o <strong>Bem-te-vi-rajado</strong> (<i>Empidonomus varius</i>), frequentemente confundido ou apelidado de formas distintas dependendo do bairro ou da proximidade com áreas rurais. Outro caso notável é o <strong>Saci</strong> (<i>Tapera naevia</i>), também chamado de sem-fim ou crispim. Essa variação linguística enriquece nossa cultura, mas reforça o desafio dos cientistas em mapear a fauna urbana.</p>
+        <!-- Seção 4: Nomes Populares -->
+        <section id="nomes-populares" class="curiosidade">
+            <h2>4. O Enigma dos Nomes Populares</h2>
+            <p>Se a ciência unifica, a cultura popular diversifica. No Brasil, o mesmo pássaro pode receber dezenas de nomes diferentes — às vezes, dentro de uma mesma cidade ou bairro.</p>
+            <p>Um exemplo clássico é o <strong>Bem-te-vi-rajado</strong> (<i>Empidonomus varius</i>), frequentemente confundido ou apelidado de formas distintas dependendo do contato com áreas rurais. Outro caso notável é o <strong>Saci</strong> (<i>Tapera naevia</i>), também conhecido como sem-fim ou crispim. Essa variação linguística enriquece nossa cultura, mas reforça o desafio dos cientistas em mapear a fauna urbana.</p>
         </section>
 
     </main>
