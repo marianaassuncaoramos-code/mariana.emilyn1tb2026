@@ -1,228 +1,80 @@
-/* ==========================================================================
-   ASAS INVISÍVEIS: A ORNITOLOGIA NO BRASIL
-   Arquivo de Estilos Main (style.css)
-   Desenvolvido por: Mariana Sophia Assunção Ramos e Emilyn Gabrielly Lemiska de Oliveira
-   ========================================================================== */
-
-/* 1. Variáveis e Reset */
-:root {
-  --primary-color: #1b4332;       /* Verde floresta profundo */
-  --primary-light: #2d6a4f;       /* Verde folha */
-  --accent-color: #d4a373;        /* Tom terroso / dourado suave */
-  --bg-color: #f4f7f5;            /* Fundo suave off-white */
-  --card-bg: #ffffff;             /* Fundo dos cartões */
-  --text-dark: #2b2d42;           /* Texto principal */
-  --text-muted: #6c757d;          /* Texto secundário/placeholders */
-  --border-color: #cbd5e1;        /* Borda de campos e separadores */
-  --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --radius: 12px;                 /* Arredondamento padrão */
-  --shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-}
-
+* ==========================================
+   1. RESET E CONFIGURAÇÕES GLOBAIS
+   ========================================== */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-family);
-  background-color: var(--bg-color);
-  color: var(--text-dark);
-  line-height: 1.7;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 20px;
 }
 
-/* 2. Cabeçalho (Header) */
-header {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-  color: #ffffff;
-  padding: 50px 20px 40px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin-bottom: 8px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header p {
-  font-size: 1.25rem;
-  color: #e2e8f0;
-  font-weight: 300;
-  max-width: 600px;
+/* ==========================================
+   2. ESTRUTURA E CONTAINER
+   ========================================== */
+.container {
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* 3. Navegação */
-nav {
-  background-color: #143225;
-  padding: 12px 20px;
-  text-align: center;
+/* ==========================================
+   3. TIPOGRAFIA E LINKS
+   ========================================== */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  color: #111;
+  line-height: 1.2;
 }
 
-nav a {
-  color: #e2e8f0;
+a {
+  color: #0066cc;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 0.95rem;
-  font-weight: 500;
   transition: color 0.2s ease;
 }
 
-nav a:hover {
-  color: var(--accent-color);
+a:hover {
+  color: #004080;
+  text-decoration: underline;
 }
 
-/* 4. Conteúdo Principal */
-main {
-  flex: 1;
-  max-width: 960px;
-  width: 100%;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-/* 5. Seções e Cartões */
-.secao {
-  background-color: var(--card-bg);
-  padding: 30px;
-  border-radius: var(--radius);
-  margin-bottom: 30px;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(0, 0, 0, 0.03);
-}
-
-.secao h2 {
-  color: var(--primary-color);
-  font-size: 1.6rem;
-  margin-bottom: 16px;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.secao h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 3px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
-
-.secao p {
-  margin-bottom: 20px;
-  font-size: 1.05rem;
-}
-
-/* 6. Espaços Reservados para Imagens (Placeholders) */
-.imagem-box {
-  position: relative;
-  width: 100%;
-  background-color: #e2e8f0;
-  border: 2px dashed var(--border-color);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.banner-box {
-  min-height: 320px;
-  background-color: #d8e2dc;
-}
-
-.conteudo-box {
-  min-height: 250px;
-}
-
-.imagem-box:hover {
-  border-color: var(--primary-light);
-  background-color: #e9ecef;
-}
-
-.placeholder-texto {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.placeholder-texto::before {
-  content: "📷";
-  font-size: 1.8rem;
-  opacity: 0.7;
-}
-
-.imagem-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: calc(var(--radius) - 2px);
-}
-
-/* 7. Rodapé */
-footer {
-  background-color: #112820;
-  color: #e2e8f0;
-  text-align: center;
-  padding: 25px 20px;
-  font-size: 0.95rem;
-  margin-top: auto;
-  border-top: 3px solid var(--accent-color);
-}
-
-footer p {
-  margin: 6px 0;
-}
-
-footer .autores {
-  font-weight: 600;
+/* ==========================================
+   4. COMPONENTES (BOTÕES, CARDS)
+   ========================================== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
   color: #ffffff;
-  letter-spacing: 0.3px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-/* 8. Responsividade */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  header p {
-    font-size: 1.05rem;
-  }
-
-  main {
-    margin: 20px auto;
-    padding: 0 15px;
-  }
-
-  .secao {
-    padding: 20px;
-  }
-
-  .banner-box {
-    min-height: 220px;
-  }
-  
-  .conteudo-box {
-    min-height: 180px;
-  }
+.btn:hover {
+  background-color: #004080;
+  text-decoration: none;
 }
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================
+   5. LAYOUT RESPONSIVO (GRID)
+   ========================================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
