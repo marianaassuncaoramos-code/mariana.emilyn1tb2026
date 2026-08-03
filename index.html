@@ -3,168 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asas Invisíveis: A Ornitologia no Brasil</title>
-    <style>
-        /* Estilos Gerais */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: #2c3e50;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: #1e4d3b; /* Tom verde natureza */
-            color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Conteúdo Principal */
-        main {
-            flex: 1;
-            max-width: 900px;
-            width: 100%;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        /* Seção do Banner/Imagem Destaque */
-        .banner-container {
-            width: 100%;
-            height: 300px;
-            background-color: #e2e8f0;
-            border: 2px dashed #cbd5e1;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-            overflow: hidden;
-        }
-
-        .banner-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Seção de Conteúdo */
-        .secao {
-            background-color: #ffffff;
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        .secao h2 {
-            color: #1e4d3b;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-        }
-
-        /* Card de Imagem de Conteúdo */
-        .imagem-box {
-            width: 100%;
-            height: 250px;
-            background-color: #e2e8f0;
-            border: 2px dashed #cbd5e1;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 15px 0;
-            overflow: hidden;
-        }
-
-        .imagem-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Texto explicativo quando não houver imagem carregada */
-        .placeholder-texto {
-            color: #64748b;
-            font-size: 0.9rem;
-            text-align: center;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #112820;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.95rem;
-            margin-top: auto;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>Ornitologia no Brasil & Conservação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Asas Invisíveis</h1>
-        <p>A Ornitologia no Brasil</p>
+    <header class="hero">
+        <div class="overlay">
+            <h1>Ornitologia: A Ciência das Aves no Brasil</h1>
+            <p>Descobrindo a biodiversidade alada, a nomenclatura científica e os desafios da conservação em Curitiba.</p>
+        </div>
     </header>
 
-    <main>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#importancia">Importância no Brasil</a></li>
+            <li><a href="#desconhecimento">O Desafio do Conhecimento</a></li>
+            <li><a href="#nomenclatura">Nomenclatura</a></li>
+            <li><a href="#curitiba">Conservação em Curitiba</a></li>
+        </ul>
+    </nav>
 
-        <div class="banner-container">
-            <img src="" alt="Banner Principal - Asas Invisíveis" onerror="this.style.display='none'">
-            <span class="placeholder-texto">[ Espaço reservado para a Imagem do Banner ]</span>
-        </div>
+    <main class="container">
 
-        <section class="secao">
-            <h2>Sobre a Ornitologia Brasileira</h2>
-            <p>O Brasil abriga uma das maiores diversidades de aves do planeta. A ornitologia dedica-se ao estudo desses animais, compreendendo seus comportamentos, habitats e importância ecológica.</p>
-            
-            <div class="imagem-box">
-                <img src="" alt="Imagem sobre Ornitologia" onerror="this.style.display='none'">
-                <span class="placeholder-texto">[ Espaço para a Imagem 1 - Insira o link no src="" ]</span>
-            </div>
+        <section id="importancia" class="card">
+            <h2>A Importância da Ornitologia no Brasil</h2>
+            <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=1200&q=80" alt="Tucano na floresta brasileira" class="img-responsive">
+            <p>
+                A <strong>ornitologia</strong> é o ramo da zoologia dedicado ao estudo das aves. No Brasil, essa ciência possui um papel estratégico inestimável devido ao fato de o país ser um dos epicentros globais de biodiversidade. Abrigando mais de 1.900 espécies registradas — desde pequenos beija-flores até majestosasharpias —, o território brasileiro funciona como um laboratório vivo essencial para o equilíbrio ecológico mundial.
+            </p>
+            <p>
+                As aves cumprem papéis ecológicos vitais que impactam diretamente a vida humana. Elas atuam como dispersoras primárias de sementes, garantindo a regeneração natural de florestas tropicais como a Mata Atlântica e a Amazônia. Além disso, participam ativamente do controle biológico de pragas agrícolas e vetores de doenças ao se alimentarem de insetos e roedores. Sem o estudo contínuo das populações aviárias, seria impossível compreender e mitigar as mudanças ambientais e a perda de habitats no ecossistema nacional.
+            </p>
         </section>
 
-        <section class="secao">
-            <h2>Espécies e Conservação</h2>
-            <p>Conhecer as espécies nativas e os desafios de conservação é fundamental para proteger a avifauna brasileira.</p>
-            
-            <div class="imagem-box">
-                <img src="" alt="Espécies de Aves do Brasil" onerror="this.style.display='none'">
-                <span class="placeholder-texto">[ Espaço para a Imagem 2 - Insira o link no src="" ]</span>
-            </div>
+        <section id="desconhecimento" class="card">
+            <h2>Por que a Ornitologia ainda é Pouco Conhecida?</h2>
+            <p>
+                Apesar da colossal riqueza natural do Brasil, a ornitologia como disciplina científica e a observação de aves (conhecida como <em>birdwatching</em>) ainda enfrentam uma falta expressiva de visibilidade no ecossistema cultural e educacional do país. Historicamente, a ciência no Brasil sofre com o financiamento inconsistente para pesquisas de campo, o que limita a divulgação de dados ecológicos para o grande público.
+            </p>
+            <p>
+                Muitas vezes, a população urbana vive desconectada do ecossistema local, desconhecendo que as cidades abrigam dezenas de espécies nativas. A falta de programas de educação ambiental focados na avifauna desde as séries iniciais faz com que aves sejam vistas apenas como parte do "cenário", e não como indicadores fundamentais da saúde ambiental. Mudar esse cenário exige aproximar a ciência do cidadão por meio da ornitologia comunitária e de plataformas de ciência cidadã, como o <em>WikiAves</em> e o <em>eBird</em>.
+            </p>
+        </section>
+
+        <section id="nomenclatura" class="card">
+            <h2>Nomenclatura Ornitológica: Como as Aves são Nomeadas</h2>
+            <img src="https://images.unsplash.com/photo-1548509925-10939694388e?auto=format&fit=crop&w=1200&q=80" alt="Ave em detalhe de plumagem" class="img-responsive">
+            <p>
+                Para organizar o estudo das aves em todo o mundo de forma padronizada, a ornitologia utiliza o sistema de <strong>Nomenclatura Binomial</strong>, introduzido pelo naturalista Carl Linnaeus no século XVIII. Esse sistema atribui a cada espécie um nome científico universal em latim ou latinizado, composto por duas partes:
+            </p>
+            <ul>
+                <li><strong>Gênero:</strong> A primeira palavra, escrita com a inicial maiúscula (ex: <em>Cyanocorax</em>).</li>
+                <li><strong>Epíteto Específico:</strong> A segunda palavra, escrita em minúscula, que identifica a espécie exata (ex: <em>caeruleus</em>).</li>
+            </ul>
+            <p>
+                Enquanto os nomes populares variam drasticamente entre regiões (uma mesma ave pode ser chamada de "sabiá-laranjeira" no Sul e de outro nome no Nordeste), o nome científico <em>Turdus rufiventris</em> garante que pesquisadores do mundo inteiro estejam se referindo exatamente à mesma espécie. A taxonomia ornitológica evolui constantemente graças aos avanços da genética de DNA, que reclassificam famílias e espécies conforme novas relações evolutivas são descobertas.
+            </p>
+        </section>
+
+        <section id="curitiba" class="card">
+            <h2>Conservação de Espécies em Curitiba</h2>
+            <img src="https://images.unsplash.com/photo-1522858547137-f1dcec554f55?auto=format&fit=crop&w=1200&q=80" alt="Gralha-azul em galho" class="img-responsive">
+            <p>
+                A cidade de Curitiba, localizada no bioma da Mata Atlântica com forte presença da Floresta de Araucárias (Floresta Ombrófila Mista), abriga uma biodiversidade aviária surpreendente. Espaços verdes urbanos como o Parque Barigui, o Parque Tingui, o Passeio Público e o Bosque do Papa servem como refúgios vitais e corredores ecológicos para diversas espécies nativas e migratórias.
+            </p>
+            <p>
+                Entre as aves de destaque na região está a <strong>Gralha-azul</strong> (<em>Cyanocorax caeruleus</em>), ave símbolo do Estado do Paraná. Ela desempenha um papel ecológico indispensável na dispersão do pinhão, a semente da Araucária (<em>Araucaria angustifolia</em>), ajudando diretamente na regeneração dessa árvore ameaçada. Outra espécie de grande atenção para a conservação na região metropolitana e litoral paranaense é o <strong>Papagaio-de-cara-roxa</strong> (<em>Amazona brasiliensis</em>), alvo de projetos intensos de preservação contra o tráfico e a perda de habitat.
+            </p>
+            <p>
+                A conservação das aves em Curitiba enfrenta desafios constantes, como a fragmentação florestal causada pelo crescimento urbano, a contaminação de rios e a presença de predadores exóticos. Iniciativas como o plantio de árvores nativas alimentícias, a criação de Unidades de Conservação municipais e o fomento ao turismo de observação de aves nos parques são fundamentais para garantir um futuro sustentável para a avifauna curitibana.
+            </p>
         </section>
 
     </main>
 
     <footer>
-        <p><strong>Desenvolvido por:</strong> Mariana Sophia Assunção Ramos e Emilyn Gabrielly Lemiska de Oliveira,Turma 1TB
+        <p>Desenvolvido por: Mariana Assunção e Emilyn Lemiska</p>
+    </footer>
+
 </body>
 </html>
